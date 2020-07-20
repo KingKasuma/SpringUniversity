@@ -9,11 +9,11 @@ import lombok.Data;
 @Table(name = "persona")
 public class Persona implements Serializable{
     
-    public static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPerona;
+    private Long id_persona;
     private String nombre;
     private String apellido;
     private String email;
